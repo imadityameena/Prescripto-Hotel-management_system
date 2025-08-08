@@ -1,17 +1,31 @@
+/* FILE: frontend/index.css */
+
+/* // (17.1) Update font in project UI and create doctor pages ✅ */
+/* The 'Outfit' font is imported from Google Fonts for a consistent typography. */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family: Outfit;
+* {
+    font-family: Outfit;
 }
 
-
-.active hr{
-  @apply block;
+/* // (8) Styling UL and HR tags with CSS ✅ */
+/* Custom style for the active navigation link to show an underline. */
+.active hr {
+    @apply block
 }
 
-::-webkit-scrollbar{
- @apply hidden
+/* // (33.3) Adding CSS properties to menu links ✅ */
+/* On mobile screens, the active navigation link gets a different background and text color for better visibility. */
+@media (max-width:740px) {
+    .active p {
+        @apply text-white bg-primary
+    }
+}
+
+::-webkit-scrollbar {
+    @apply hidden
 }

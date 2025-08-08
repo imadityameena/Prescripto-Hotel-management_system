@@ -1,12 +1,18 @@
+/* FILE: admin/index.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* // (46.3) Setting up admin panel styles ✅ */
+/* The 'Outfit' font is set as the default for the entire admin application for a consistent look. */
+* {
     font-family: Outfit;
 }
 
-::-webkit-scrollbar{
+/* A common utility to hide the default scrollbar for a cleaner UI in custom scrolling containers. */
+::-webkit-scrollbar {
     display: none;
 }
