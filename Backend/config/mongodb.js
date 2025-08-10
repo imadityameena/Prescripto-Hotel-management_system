@@ -8,7 +8,7 @@ const connectDB = async () => {
     // (37.2) Establishing connection with MongoDB Atlas database ✅
     // This connects to the database using the URI from environment variables and logs a confirmation message.
     mongoose.connection.on('connected', () => console.log("Database Connected"))
-    await mongoose.connect(`${process.env.MONGODB_URI}/prescripto`)
+    await mongoose.connect(`${process.env.MONGODB_URI}`)
 
 }
 

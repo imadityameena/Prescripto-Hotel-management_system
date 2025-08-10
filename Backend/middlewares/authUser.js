@@ -14,7 +14,7 @@ const authUser = async (req, res, next) => {
         
         // (43.7) The user's ID is decoded from the token and attached to the request body.
         // This allows the userController to know who is making the request.
-        req.body.userId = token_decode.id
+        req.userId = token_decode.id
         
         next()
     } catch (error) {

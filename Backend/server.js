@@ -6,7 +6,7 @@ import 'dotenv/config'
 import connectDB from "./config/mongodb.js"
 import connectCloudinary from "./config/cloudinary.js"
 import userRouter from "./routes/userRoute.js"
-import doctorRouter from "./routes/doctorRoute.js"
+import doctorRouter from "./routes/doctorRoutes.js"
 import adminRouter from "./routes/adminRoute.js"
 
 // (36.2) Setting up and running a simple Express app ✅

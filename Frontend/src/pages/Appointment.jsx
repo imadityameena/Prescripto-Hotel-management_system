@@ -11,7 +11,7 @@ import { toast } from 'react-toastify'
 const Appointment = () => {
 
     const { docId } = useParams()
-    const { doctors, currencySymbol, backendUrl, token, getDoctosData } = useContext(AppContext)
+    const { doctors, currencySymbol, backendUrl, token, getDoctorsData } = useContext(AppContext)
     const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 
     // (20.1) Display doctor's data, booking slot, and related doctors on appointment page. ✅
@@ -106,7 +106,7 @@ const Appointment = () => {
                 toast.success(data.message)
                 // (54.4) Fixing 'get doctor's data is not a function' error ✅
                 // Note: The lecture error was likely `getDoctorsData`, the correct function is `getDoctosData`.
-                getDoctosData() 
+                getDoctorsData() 
                 navigate('/my-appointments')
             } else {
                 toast.error(data.message)

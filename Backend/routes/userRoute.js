@@ -2,8 +2,8 @@
 
 import express from 'express';
 import { loginUser, registerUser, getProfile, updateProfile, bookAppointment, listAppointment, cancelAppointment, paymentRazorpay, verifyRazorpay, paymentStripe, verifyStripe } from '../controllers/userController.js';
-import upload from '../middleware/multer.js';
-import authUser from '../middleware/authUser.js';
+import upload from '../middlewares/multer.js';
+import authUser from '../middlewares/authUser.js';
 const userRouter = express.Router();
 
 // (50.4) Setting up JWT authentication and creating user registration route ✅
